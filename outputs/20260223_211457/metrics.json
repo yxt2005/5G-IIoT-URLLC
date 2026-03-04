@@ -1,0 +1,10 @@
+{
+  "total_slots": 1000,
+  "random_seed": 42,
+  "total_arrivals": 1464,
+  "arrivals_by_flow": {
+    "HRP": 1000,
+    "SRP": 250,
+    "ETC": 214
+  }
+}

@@ -1,0 +1,66 @@
+simulation:
+  duration_slots: 300
+  slot_time_ms: 1
+  random_seed: 42
+
+traffic:
+  ue:
+    count: 1
+    seed_mode: "per_ue_offset"
+  flows:
+    - id: "HRP"
+      type: "HRP"
+      arrival: { model: "periodic", period_ms: 4 }
+      packet_size_bytes: 32
+      deadline_ms: 4
+      priority: 2
+    - id: "SRP"
+      type: "SRP"
+      arrival: { model: "periodic", period_ms: 20 }
+      packet_size_bytes: 200
+      deadline_ms: 50
+      priority: 3
+    - id: "ETC"
+      type: "ETC"
+      arrival: { model: "poisson", lambda_per_s: 200 }
+      packet_size_bytes: 16
+      deadline_ms: 1
+      priority: 1
+
+resource:
+  granularity: "continuous"
+  allocation_policy: "demand_based"
+  min_share:
+    enabled: false
+
+link:
+  model: "inf_channel"
+  resource:
+    bandwidth_fraction: 0.8
+  scenario:
+    name: "InF-SL"
+    fc_ghz: 3.5
+    bandwidth_mhz: 20
+    tx_power_dbm: 23
+    noise_figure_db: 7
+    bs_height_m: 1.5
+    ut_height_m: 1.5
+    shadow_sigma_los_db: 4.0
+    shadow_sigma_nlos_db: 7.0
+    rician_k_db: 6.0
+    tu_ms: 1
+  geometry:
+    mode: "per_ue_fixed_distance"
+    distances_m: [30]
+  phy:
+    mcs_mode: "AMC"
+    target_bler: 1e-2
+    mcs_list: ["QPSK", "16QAM"]
+  mcs_efficiency_bpshz:
+    QPSK: 1.0
+    16QAM: 3.0
+
+retransmission:
+  enabled: true
+  max_tx: 4
+  strategy: "immediate"

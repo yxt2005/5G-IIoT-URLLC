@@ -1,0 +1,46 @@
+{
+  "total_slots": 1000,
+  "random_seed": 42,
+  "total_arrivals": 484,
+  "arrivals_by_flow": {
+    "HRP": 250,
+    "SRP": 50,
+    "ETC": 184
+  },
+  "total_served": 583,
+  "total_delivered": 483,
+  "total_served_deadline_missed": 0,
+  "total_deadline_missed": 1,
+  "total_dropped_deadline_missed": 1,
+  "total_dropped_deadline": 1,
+  "total_dropped_max_tx": 0,
+  "total_tx_attempts": 583,
+  "total_success_bits": 167296,
+  "deadline_miss_rate_served": 0.0,
+  "deadline_miss_rate_total": 0.002066115702479339,
+  "delivered_rate": 0.9979338842975206,
+  "avg_tx_per_delivered": 1.2070393374741202,
+  "total_failed": 1,
+  "failure_rate_total": 0.002066115702479339,
+  "avg_queue_delay_ms": 0.3105590062111801,
+  "avg_tx_time_ms": 1.31055900621118,
+  "avg_sojourn_ms": 1.6211180124223603,
+  "p95_sojourn_ms": 6.0,
+  "p99_sojourn_ms": 8.0,
+  "throughput_bps": 167296.0,
+  "queue_max_len": 2,
+  "queue_size_by_priority_end": {
+    "1": 0,
+    "2": 0,
+    "3": 0
+  },
+  "mean_snr_db": 57.55643673024064,
+  "p05_snr_db": 40.61611938812071,
+  "p50_snr_db": 59.306496692045336,
+  "p95_snr_db": 68.48901033511854,
+  "mcs_counts": {
+    "QPSK": 0,
+    "16QAM": 583
+  },
+  "los_rate": 0.5197255574614065
+}
