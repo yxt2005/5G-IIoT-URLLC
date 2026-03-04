@@ -1,0 +1,179 @@
+{
+  "total_slots": 300,
+  "random_seed": 42,
+  "total_arrivals": 5047,
+  "arrivals_by_flow": {
+    "HRP": 1500,
+    "SRP": 3000,
+    "ETC": 547
+  },
+  "arrivals_by_ue": {
+    "0": 502,
+    "1": 496,
+    "2": 501,
+    "3": 508,
+    "4": 502,
+    "5": 503,
+    "6": 499,
+    "7": 511,
+    "8": 513,
+    "9": 512
+  },
+  "total_served": 5122,
+  "total_delivered": 5044,
+  "total_deadline_missed": 0,
+  "total_dropped_deadline": 3,
+  "total_dropped_max_tx": 0,
+  "total_tx_attempts": 5122,
+  "total_success_bits": 5253632,
+  "delivered_rate": 0.9994055874777096,
+  "deadline_miss_ratio": 0.0,
+  "avg_tx_per_delivered": 1.0154639175257731,
+  "total_failed": 3,
+  "failure_rate_total": 0.0005944125222904696,
+  "avg_waiting_ms": 0.0,
+  "avg_sojourn_ms": 1.0148691514670896,
+  "p95_sojourn_ms": 1.0,
+  "p99_sojourn_ms": 2.0,
+  "throughput_bps": 17512106.666666668,
+  "bandwidth_fraction": 0.8,
+  "effective_bandwidth_mhz": 16.0,
+  "bandwidth_utilization": 1.0945066666666667,
+  "queue_max_len": 4,
+  "queue_size_by_priority_end": {
+    "1": 0,
+    "2": 0,
+    "3": 0
+  },
+  "mean_snr_db": 32.92091215948964,
+  "p05_snr_db": 15.202081203909312,
+  "p50_snr_db": 33.913168323021985,
+  "p95_snr_db": 47.73959802726612,
+  "mcs_counts": {
+    "QPSK": 515,
+    "16QAM": 4607
+  },
+  "los_rate": 0.3738773916438891,
+  "per_flow_kpis": {
+    "HRP": {
+      "delivery_ratio": 1.0,
+      "deadline_miss_ratio": 0.0,
+      "mean_sojourn_ms": 1.0093333333333334,
+      "p95_sojourn_ms": 1.0,
+      "p99_sojourn_ms": 1.0,
+      "throughput_bps": 1280000.0,
+      "bandwidth_utilization": 0.08
+    },
+    "SRP": {
+      "delivery_ratio": 1.0,
+      "deadline_miss_ratio": 0.0,
+      "mean_sojourn_ms": 1.0203333333333333,
+      "p95_sojourn_ms": 1.0,
+      "p99_sojourn_ms": 2.0,
+      "throughput_bps": 16000000.0,
+      "bandwidth_utilization": 1.0
+    },
+    "ETC": {
+      "delivery_ratio": 0.9945155393053017,
+      "deadline_miss_ratio": 0.0,
+      "mean_sojourn_ms": 1.0,
+      "p95_sojourn_ms": 1.0,
+      "p99_sojourn_ms": 1.0,
+      "throughput_bps": 232106.6666666667,
+      "bandwidth_utilization": 0.014506666666666666
+    }
+  },
+  "per_ue_kpis": {
+    "0": {
+      "delivery_ratio": 1.0,
+      "deadline_miss_ratio": 0.0,
+      "mean_sojourn_ms": 1.00398406374502,
+      "p95_sojourn_ms": 1.0,
+      "p99_sojourn_ms": 1.0,
+      "throughput_bps": 1750186.6666666667,
+      "bandwidth_utilization": 0.10938666666666666
+    },
+    "1": {
+      "delivery_ratio": 1.0,
+      "deadline_miss_ratio": 0.0,
+      "mean_sojourn_ms": 1.0060483870967742,
+      "p95_sojourn_ms": 1.0,
+      "p99_sojourn_ms": 1.0,
+      "throughput_bps": 1747626.6666666667,
+      "bandwidth_utilization": 0.10922666666666667
+    },
+    "2": {
+      "delivery_ratio": 1.0,
+      "deadline_miss_ratio": 0.0,
+      "mean_sojourn_ms": 1.0059880239520957,
+      "p95_sojourn_ms": 1.0,
+      "p99_sojourn_ms": 1.0,
+      "throughput_bps": 1749760.0,
+      "bandwidth_utilization": 0.10936
+    },
+    "3": {
+      "delivery_ratio": 1.0,
+      "deadline_miss_ratio": 0.0,
+      "mean_sojourn_ms": 1.0118110236220472,
+      "p95_sojourn_ms": 1.0,
+      "p99_sojourn_ms": 2.0,
+      "throughput_bps": 1752746.6666666667,
+      "bandwidth_utilization": 0.10954666666666667
+    },
+    "4": {
+      "delivery_ratio": 1.0,
+      "deadline_miss_ratio": 0.0,
+      "mean_sojourn_ms": 1.0119521912350598,
+      "p95_sojourn_ms": 1.0,
+      "p99_sojourn_ms": 2.0,
+      "throughput_bps": 1750186.6666666667,
+      "bandwidth_utilization": 0.10938666666666666
+    },
+    "5": {
+      "delivery_ratio": 1.0,
+      "deadline_miss_ratio": 0.0,
+      "mean_sojourn_ms": 1.0059642147117296,
+      "p95_sojourn_ms": 1.0,
+      "p99_sojourn_ms": 1.0,
+      "throughput_bps": 1750613.3333333335,
+      "bandwidth_utilization": 0.10941333333333333
+    },
+    "6": {
+      "delivery_ratio": 0.9979959919839679,
+      "deadline_miss_ratio": 0.0,
+      "mean_sojourn_ms": 1.0261044176706828,
+      "p95_sojourn_ms": 1.0,
+      "p99_sojourn_ms": 2.0,
+      "throughput_bps": 1748480.0,
+      "bandwidth_utilization": 0.10928
+    },
+    "7": {
+      "delivery_ratio": 0.9980430528375733,
+      "deadline_miss_ratio": 0.0,
+      "mean_sojourn_ms": 1.0176470588235293,
+      "p95_sojourn_ms": 1.0,
+      "p99_sojourn_ms": 2.0,
+      "throughput_bps": 1753600.0,
+      "bandwidth_utilization": 0.1096
+    },
+    "8": {
+      "delivery_ratio": 1.0,
+      "deadline_miss_ratio": 0.0,
+      "mean_sojourn_ms": 1.0214424951267056,
+      "p95_sojourn_ms": 1.0,
+      "p99_sojourn_ms": 2.0,
+      "throughput_bps": 1754880.0,
+      "bandwidth_utilization": 0.10968
+    },
+    "9": {
+      "delivery_ratio": 0.998046875,
+      "deadline_miss_ratio": 0.0,
+      "mean_sojourn_ms": 1.0371819960861057,
+      "p95_sojourn_ms": 1.0,
+      "p99_sojourn_ms": 2.0,
+      "throughput_bps": 1754026.6666666667,
+      "bandwidth_utilization": 0.10962666666666666
+    }
+  },
+  "jain_fairness_throughput": 0.9999982286732075
+}
