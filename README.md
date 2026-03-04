@@ -43,8 +43,7 @@
 
 ```text
 configs/                 配置文件
-  default.yaml           默认实验配置
-  regression/            回归用例配置
+  default.yaml           实验配置参数表
 
 src/
   core/                  仿真主循环、类型、队列
@@ -55,7 +54,6 @@ src/
 
 experiments/
   run.py                 单次实验入口
-  run_regression.py      回归实验入口
 
 outputs/                 仿真输出目录
 tests/                   单元测试
@@ -81,7 +79,7 @@ python -m experiments.run_regression --configs-dir configs/regression
 pytest -q
 ```
 
-## 结果位置
+## 结果
 
 默认单次运行结果保存在：
 
@@ -125,7 +123,7 @@ outputs/regression/<timestamp>/
 - 不同距离配置下的链路质量变化
 - AMC 与重传机制对成功率、吞吐和时延的影响
 
-## 后续可扩展内容
+## 后续计划扩展内容
 
 后续可以在当前工程基础上继续扩展以下内容：
 
@@ -134,39 +132,16 @@ outputs/regression/<timestamp>/
   - 最小带宽保底
   - 按优先级/按业务切片
 
-- 更复杂信道模型
-  - 多 UE 空间分布
-  - 时间相关衰落
-  - 更完整的 InF 子场景参数
-
-- 更复杂调度算法
+- 不同调度算法实现与对比（当前完全采用严格优先级调度）
   - EDF
   - PF
   - Deadline-aware priority
 
-- 更丰富的结果展示
-  - 实验结果图
+- 设置不同参数进行实验，绘制项目与实验图表
+  - 不同UE平均信噪比空间分布
   - 时延 CDF / CCDF
   - 吞吐-可靠性折中图
   - 不同业务流 KPI 对比图
   - 项目模型示意图
   - 仿真流程图
 
-## 展示建议
-
-后续如果需要做课程汇报、论文图表或项目展示，建议在仓库中新增如下目录：
-
-```text
-docs/
-  figures/               实验结果图
-  diagrams/              模型示意图、流程图
-  reports/               阶段性分析文档
-```
-
-这样可以把：
-- 实验脚本
-- 原始输出
-- 可视化图表
-- 模型说明图
-
-分开管理，便于后续扩展与汇报整理。
